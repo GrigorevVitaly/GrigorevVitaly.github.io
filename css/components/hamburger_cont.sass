@@ -1,0 +1,72 @@
+.hamburger_menu_container
+  background-color: rgba(#2f3234, .99)
+  position: absolute
+  right: 0
+  left: 0
+  bottom: 0
+  top: 0
+  z-index: 100
+  display: none
+
+.hamburger_menu_header
+  position: absolute
+
+.hamburger_logo
+  padding: rem(12px) 0 0 rem(16px)
+
+.close
+  position: absolute
+  right: rem(32px)
+  top: rem(32px)
+  width: rem(32px)
+  height: rem(32px)
+
+.close:before, .close:after
+  position: absolute
+  left: rem(15px)
+  content: ' '
+  height: rem(26px)
+  width: rem(4px)
+  background-color: $white
+
+.close:before
+  transform: rotate(45deg)
+
+.close:after
+  transform: rotate(-45deg)
+
+.hamburger_nav_list
+  display: block
+  font-size: 0
+  margin: 0
+  padding: 0
+  list-style-type: none
+
+  li
+    position: relative
+    display: block
+    padding: rem(10px)
+
+
+  a
+    color: $white
+    text-decoration: none
+    text-transform: uppercase
+    font-size: rem(24px)
+    +medium
+
+.hamburger_menu_list
+  height: 100%
+
+.hamburger_nav
+  height: 100%
+
+.hamburger_nav_list
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 100%
+
+.bull
+  font-size: rem(12px)

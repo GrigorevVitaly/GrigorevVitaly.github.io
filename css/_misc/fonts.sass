@@ -1,0 +1,13 @@
+@mixin fontFace($nameFont)
+	@font-face
+		font-family: '#{$nameFont}'
+		src: url('../fonts/#{$nameFont}.woff2') format('woff2'), url('../fonts/#{$nameFont}.woff') format('woff')
+		font-weight: normal
+		font-style: normal
+
++fontFace("Ubuntu")
++fontFace("Ubuntu-Bold")
++fontFace("Ubuntu-Light")
++fontFace("Ubuntu-Medium")
++fontFace("Gagalin-Regular")
++fontFace("Lifehack-Medium")

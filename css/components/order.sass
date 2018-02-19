@@ -1,0 +1,148 @@
+.order
+    background: url(../img/background/order.png) center center no-repeat
+    background-size: cover
+    align-items: center
+    display: flex
+    height: 100vh
+
+.order_title
+    margin-top: rem(-36px)
+    h1
+        font-size: rem(72px)
+        font-family: $gregular
+        color: $yellow
+        text-align: center
+        width: 100%
+        height: 100%
+        margin: 0
+
+
+.order_form
+    display: flex
+    padding-top: rem(20px)
+    @include tablets
+        flex-direction: column
+        align-items: center
+
+.order_form-tag
+    padding-top: rem(9px)
+
+
+.order_form-col
+    width: 50%
+    @include phones
+        width: 100%
+    &:last-child
+        padding-left: rem(20px)
+        @include tablets
+            padding: 0
+
+.order_form-row
+    display: flex
+    margin-left: rem(-2px)
+    @include phones
+        justify-content: center
+
+.order_form-row-address
+    padding-top: rem(9px)  
+
+.order_form-label
+    font-size: rem(14px)
+    font-family: $light
+
+.order_form-input_first
+    width: 97%
+    height: rem(33px)
+
+.order_form-block_st
+    width: 100%
+    padding-top: rem(13px)
+
+.order_form-label_st
+    font-family: $light
+    font-size: rem(14px)
+    width: 100%
+
+.order_form-input_st
+    width: 98%
+
+.order_form-block
+    width: 50%
+    padding-left: rem(20px)
+    &:first-child
+        padding-left: 0
+
+.order_form-block_address
+    padding: rem(10px) 0 0 rem(16px)
+    &:first-child 
+        padding-left: 0
+        
+.order_form-input_address
+    width: 92%
+
+.order_form-input
+    width: 100%
+
+
+input 
+    height: rem(35px)
+    border-radius: rem(8px)
+
+.order_radio-elem:checked
+    background: url('https://s3-eu-west-1.amazonaws.com/radiantwind/js_css/radio_sprite.png') transparent no-repeat 0 -18px
+    position: relative
+    color: yellow
+    cursor: pointer
+
+
+.order_form-block_textarea
+    width: 98%
+
+.order_form-input_textarea
+    height: rem(110px)
+    resize: none
+    border-radius: rem(8px)
+
+.order_radio
+    display: flex
+    &:last-child
+        padding-left: rem(22px)
+
+.order_radio_checkbox
+    display: flex
+    padding: rem(7px) 0 0 0
+
+
+.order_radio-title
+    font-family: $light
+    font-size: rem(14px)
+    padding-top: rem(7px)
+    padding-left: rem(9px)
+
+.order_form-buttons
+    padding: rem(7px) 0 0 rem(4px)
+
+.order_form-button
+    padding: rem(10.5px) rem(15px) rem(12.5px)
+    background: $orange
+    border-radius: rem(5px)
+    border: $orange
+    font-size: rem(13px)
+    line-height: 1
+    text-transform: uppercase
+    text-decoration: none
+    +medium
+    color: $white
+    &:hover
+        background: #c1401e
+
+.order_form-row_btt
+    padding-top: rem(10px)
+
+.order_form-button_reset
+    background: none
+    border: none
+    color: $white
+    +medium
+    font-size: rem(13px)
+    padding-left: rem(21px)

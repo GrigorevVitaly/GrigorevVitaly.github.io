@@ -1,0 +1,80 @@
+.hero_content
+	background: url(../img/background/texture.png) center center no-repeat
+	background-size: cover
+	display: flex
+	justify-content: space-between
+	height: 100vh
+
+.hero_container
+	display: flex
+	align-items: center
+	height: 100vh
+	padding: rem(64px) 0
+	@include tablets 
+		flex-direction: column
+
+.burger
+	margin-top: rem(-100px)
+	padding-left: rem(15px)
+	@include phones
+		margin-top: 0
+	img
+		display: block
+		max-width: 100%
+		max-height: 100%
+		width: auto
+		height: auto
+	
+.hero_left_content,
+.hero_right_content
+	flex: 50% 1 0
+	aligh-items: center 
+
+.hero_right_content
+	h1
+		margin: 0
+		padding: 0
+		display: block
+		font-family: $life
+		font-weight: normal
+		color: $white
+		font-size: rem(65px)
+		line-height: .9
+		margin-top: 0
+		padding-left: rem(30px)
+		@include tablets 
+			text-align: center
+		span
+			display: block
+			&:first-child
+				font-size: rem(72px)
+				font-family: $gregular
+				color: $yellow
+				margin-bottom: rem(35px)
+			+ span
+					letter-spacing: rem(-2px)
+
+.hero_left_content
+	@include tablets
+		padding-top: rem(80px)
+	@include phones
+		padding-top: 0
+
+.next
+	display: flex
+	justify-content: center
+	position: absolute
+	bottom: 0
+	left: 50%
+	height: rem(50px)
+	width: rem(50px)
+	margin-left: rem(-25px)
+	padding: 0
+	img
+		display: flex
+		height: rem(14px)
+		width: rem(29px)
+
+#fullpage
+  height: 100vh
+  overflow: hidden

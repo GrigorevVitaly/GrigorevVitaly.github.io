@@ -1,0 +1,83 @@
+.menu_content
+    background: url(../img/background/menu.png) center center no-repeat
+    background-size: cover
+    display: flex
+    height: 100vh
+    position: relative
+
+.section_menu_title
+    h1
+        font-family: $gregular
+        color: $white
+        font-size: rem(72px)
+        padding: rem(82px) 0 0 rem(99px)
+
+.menu_accardeon
+    display: flex
+    position: absolute
+    right: 0
+    top: 0
+    bottom: 0
+
+.menu_acco_item
+    height: 100%
+    
+
+.menu_acco_trigger
+    width: rem(80px)
+    display: block
+    height: 100%
+    float: left
+    background-size: cover
+    text-decoration: none
+    position: relative
+
+.menu_acco_content
+    height: 100%
+    background: rgba(#2f3234, .93)
+    float: left
+    width: 0
+    overflow: hidden
+    line-height: rem(24px)
+
+.menu_acco_trigger_text 
+    position: absolute
+    transform: rotate(-90deg) translateY(-50%)
+    transform-origin: 0 0
+    text-align: center
+    font-family: $gregular
+    font-size: rem(40px)
+    white-space: nowrap
+    color: $white
+    left: 50%
+    top: 100%
+    margin-top: rem(-40px)
+
+.menu_acco_item_active
+    .menu_acco_trigger_text
+        color: $yellow
+    .menu_acco_content
+        width: rem(536px)
+        @include tablets 
+    	    width: 80%
+        @include phones
+            position: absolute
+            right: 0
+            z-index: 1
+            padding-left: rem(9px)`
+
+        
+    
+
+.menu_acco_text 
+  font-family: $light
+  font-size: rem(14px)
+  color: $white
+  padding: rem(54px) rem(33px)
+  width: 94%
+  display: block
+  @include phones
+    width: auto
+
+
+

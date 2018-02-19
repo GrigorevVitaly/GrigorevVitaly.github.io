@@ -1,0 +1,72 @@
+.map
+    height: 100vh
+    display: flex
+
+
+#map
+    height: 100%
+    width: 100%
+
+.footer_content
+    display: flex
+    background: url(../img/background/info.png) center center no-repeat
+    background-size: cover
+    position: absolute
+    height: rem(58px)
+    bottom: 0
+    left: 0
+    right: 0
+    @include phones
+        flex-direction: column
+        height: rem(60px)
+    
+
+.footer_contacts
+    font-family: $light
+    font-size: rem(14px)
+    display: flex
+    width: 50%
+    align-items: center
+    @include phones
+        width: 100%
+    p 
+        padding-left: rem(82px)
+        line-height: rem(24px)
+        @include tablets
+            line-height: rem(14px)
+        @include phones
+            text-align: center
+    span 
+        font-family: $bold
+        font-size: rem(14px)
+        color: $orange
+
+.footer_social
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    width: 50%
+    text-align: right
+    @include phones
+        width: 100%
+        justify-content: center
+
+.social
+    display: flex
+    padding-right: rem(78px)
+    @include phones
+        padding: 0
+
+.social_items
+    padding: 0 rem(12px)
+    &:last-child
+        padding-right: 0
+
+
+.social_icon
+    width: rem(20px)
+    height: rem(20px)
+
+.phone
+    height: rem(11px)
+    width: rem(13px)

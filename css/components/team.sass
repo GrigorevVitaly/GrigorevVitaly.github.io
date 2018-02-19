@@ -1,0 +1,111 @@
+.team_container
+    background: url(../img/background/team.png) no-repeat
+    background-size: cover
+    display: flex
+    justify-content: flex-end
+    height: 100vh
+
+.team_right_content
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 48.7%
+    height: 100%
+    background: rgba($grey, .93)
+    @include tablets 
+    	width: 100%
+
+.team_right_content_acco
+    width: 49%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: absolute
+    @include tablets 
+    	margin: 0
+
+.team_right_content_title
+    display: flex
+    padding-top: rem(84px)
+    margin-left: rem(-49px)
+    h1
+        font-size: rem(72px)
+        font-family: $gregular
+        color: $yellow
+
+.team_acco_trigger 
+    color: $white
+    display: flex
+    align-items: center
+    text-decoration: none
+    font-family: $gregular
+    font-size: rem(14.01px)
+    padding-left: rem(18px)
+    &:before 
+        content: ""
+        height: 0
+        width: 0
+        border: rem(5px) solid transparent
+        border-top-color: $white
+        border-bottom-width: 0
+
+.team_acco_item_main_text
+    display: flex
+    flex-direction: column
+    justify-content: center
+    
+
+.team_acco_item_content
+    display: flex
+    height: auto
+    max-height: 0
+    //transition: max-height .2s ease-in-out
+    overflow: hidden
+    width: rem(390px)
+    @include tablets 
+    	flex-direction: column
+    h4 
+        +bold 
+        font-size: rem(14.01px)
+        text-align: left
+
+.team_acco_img
+    padding: rem(15px) rem(20px) 0 rem(28px)
+    @include phones
+            text-align: center
+
+.team_acco_item_content_title
+    padding-top: rem(10px)
+    @include phones
+            text-align: center
+
+.team_acco_item_content_text
+    margin-top: rem(-4px)
+    p 
+        font-family: $light
+        @include phones
+            text-align: center
+
+.team_acco_item
+    padding-top: rem(30px)
+    width: rem(150px)
+.team_acco_item_active
+    .team_acco_item_content
+        max-height: 500px
+        transition: max-height 1s ease-out
+.team_acco_item_active
+    .team_acco_trigger
+        color: $yellow
+        &:before
+            border-top-color: $yellow
+            transform: rotate(-180deg)
+
+
+    
+
+
+
+
+  

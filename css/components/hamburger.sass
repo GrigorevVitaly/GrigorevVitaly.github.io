@@ -1,0 +1,33 @@
+.hamburger_menu
+  margin: 0 auto
+  position: absolute
+  right: rem(30px)
+  top: 4.5%
+  margin: 0
+  padding: 0
+  list-style: none
+  transform: translateY(-50%)
+  z-index: 100
+  display: none
+  @include tablets
+    display: block
+  span
+    margin-top: rem(5px)
+    display: block
+    height: rem(7px)
+    width: rem(33px)
+    background: $white
+    border-radius: 18%
+    position: relative
+    &:before
+      display: none
+      position: absolute
+      content: ''
+      border: 1px solid $white
+      border-radius: 50%
+      height: rem(15px)
+      width: rem(15px)
+      top: 50%
+      left: 50%
+      margin-left: rem(-8.5px)
+      margin-top: rem(-8.5px)

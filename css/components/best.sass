@@ -1,0 +1,59 @@
+.best_screen
+	background: url(../img/background/bg2.png) center center no-repeat
+	background-size: cover
+	display: flex
+	height: 100vh
+
+.best_title
+	display: flex
+	justify-content: center
+	padding-top: rem(113px)
+	h1 
+		font-family: $gregular
+		font-size: rem(72.06px)
+		color: $grey
+		margin: 0
+		padding: 0
+
+.best_container
+	display: flex
+	justify-content: center
+	align-items: center
+	@include phones
+		flex-direction: column
+
+.best_item
+	display: block
+	margin: 0
+	padding: 0
+	width: 33.333%
+	@include phones
+		display: flex
+		width: 80%
+	img 
+		display: block
+		margin: 0 auto
+		padding-top: rem(45px)
+	h3 
+		font-family: $life
+		font-size: rem(24.12px)
+		text-align: center
+		color: $grey
+		margin: 0
+		padding-top: rem(31px)
+		@include phones
+			text-align: left
+	p 
+		font-family: $light
+		font-size: rem(14.01px)
+		text-align: center
+		color: #787776
+		margin: 0
+		padding-top: rem(16px)
+		line-height: rem(23.2px)
+		@include phones
+			text-align: left
+
+.phone_d
+	@include phones
+		padding-left: rem(25px)

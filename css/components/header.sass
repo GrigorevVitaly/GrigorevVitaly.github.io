@@ -1,0 +1,87 @@
+header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	+medium
+	z-index: 1
+
+.menu_nav
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.header_logo
+	padding-top: 0.75em
+
+.header-content
+	display: flex
+	align-self: center
+	align-items: center
+	@include tablets
+		padding-right: rem(77px)
+
+.header_nav
+	padding-top: 2em
+	align-self: center
+
+.nav
+	@include tablets 
+    	display: none
+  
+
+.nav-list
+	display: block
+	font-size: 0
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+	li
+		position: relative
+		display: inline-block
+		padding-left: rem(20px)
+		padding-right: rem(15px)
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 50%
+			background-color: $white
+			display: block
+			height: rem(5px)
+			width: rem(5px)
+			border-radius: 50%
+			margin-top: rem(-2.5px)
+		
+
+		&:first-child:before
+			display: none
+
+		a
+			color: $white
+			text-decoration: none
+			text-transform: uppercase
+			font-size: 0.813em
+			font-weight: 500
+			font-size: rem(13px)
+
+.header-button
+	display: block
+	height: rem(13px)
+	align-self: center
+	
+
+.button
+	padding: rem(10.5px) rem(15px) rem(12.5px)
+	background: $orange
+	border-radius: rem(8px)
+	font-size: rem(13px)
+	line-height: 1
+	text-transform: uppercase
+	text-decoration: none
+	+medium
+	color: $white
+	&:hover
+		background: #c1401e
+
